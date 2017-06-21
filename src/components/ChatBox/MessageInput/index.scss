@@ -1,0 +1,21 @@
+@import "../../../style/color.scss";
+
+.message-input {
+  flex: 0 0 20%;
+  background: $root-background-color;
+  border-bottom: 2px solid $chatbox-background-color;
+  border-right: 2px solid $chatbox-background-color;
+
+  textarea {
+
+    resize: none;  //禁止拖拽
+    outline: none; //去除点击的聚焦边框
+    border: 0;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, 微软雅黑;
+    font-size: 15px;
+    overflow: hidden;
+  }
+}

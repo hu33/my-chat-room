@@ -1,0 +1,28 @@
+@import "../../../style/color.scss";
+
+.search-item {
+  flex: 0 0 auto;
+  margin: 15px 20px;
+
+  input {
+    -webkit-appearance: none;   //去掉input的默认样式
+    -moz-appearance: none;
+    outline: none;  //去除点击时的蓝色边框
+    font-size: 14px;
+    height: 35px;
+    border-radius: 4px;
+    border: 1px inset #444444;
+    width: 260px;
+    padding-left: 10px;
+    background-color: $search-background-color;
+    color: $search-placeholder-color;
+  }
+
+  input::-webkit-input-placeholder {
+    color: $search-placeholder-color;
+  }
+
+  input:focus,:hover {
+    border: 2px inset #555555;
+  }
+}

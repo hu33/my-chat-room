@@ -1,0 +1,9 @@
+@import "../../style/color.scss";
+
+.chatBox {
+  flex: 1 0 auto;
+  background: $chatbox-background-color;
+  display: flex;
+  flex-direction: column;
+
+}

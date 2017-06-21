@@ -1,0 +1,23 @@
+@import '../../style/color.scss';
+
+.header-wrapper {
+  flex: 0 0 60px;
+  background: $header-background-color;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  span {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: $header-btn-color;
+    cursor: pointer;
+    margin: 0 60px;
+  }
+
+  span:first-child {
+    font-size: 20px;
+  }
+
+}

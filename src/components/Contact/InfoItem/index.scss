@@ -1,0 +1,22 @@
+@import "../../../style/color.scss";
+
+.info-item {
+  flex: 0 0 auto;
+  margin: 20px 20px 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
+  img {
+    height: 50px;
+    width: 50px;
+
+  }
+
+  span {
+    color: $contact-font-color;
+    font-size: 16px;
+    margin-left: 30px;
+  }
+}

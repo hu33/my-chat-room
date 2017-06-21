@@ -1,0 +1,13 @@
+@import "../../style/color.scss";
+
+.footer-wrapper {
+  flex: 0 0 60px;
+  background-color: $header-background-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    color: $footer-font-color;
+  }
+}

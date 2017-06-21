@@ -1,0 +1,27 @@
+@import "../../../style/color.scss";
+
+.contact-list {
+  flex: 1 0 auto;
+
+  .ant-menu {
+    background: $contact-background-color;
+  }
+  //ul {
+  //  list-style-type: none; //不显示ul的项目符号
+  //  margin: 0;
+  //  padding: 0;
+  //
+  //  li {
+  //    padding: 15px;
+  //    border-bottom: 1px inset #232323;
+  //    font-size: 15px;
+  //    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  //    color: $contact-font-color;
+  //    cursor: pointer;
+  //  }
+  //
+  //  li:hover,:active {
+  //    background: #43464D;
+  //  }
+  //}
+}
