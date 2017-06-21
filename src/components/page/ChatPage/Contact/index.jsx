@@ -10,11 +10,12 @@ class Contact extends React.Component {
     }
 
     render() {
+        const { contactList, nickName } = this.props;
         return (
             <div className="contact-wrapper">
-                <InfoItem />
+                <InfoItem nickName={nickName} />
                 <SearchInput />
-                <ContactList />
+                <ContactList contactList={contactList} />
             </div>
         )
     }

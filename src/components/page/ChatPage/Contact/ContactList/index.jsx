@@ -8,19 +8,16 @@ class ContactList extends React.PureComponent {
     }
 
     render() {
+        const { contactList } = this.props;
         return (
             <div className="contact-list">
                 <Menu
                     theme="dark"
-                    defaultSelectedKeys={['1']}
                     mode="inline"
                 >
-                    <Menu.Item key="1">Bob</Menu.Item>
-                    <Menu.Item key="2">Bob</Menu.Item>
-                    <Menu.Item key="3">Bob</Menu.Item>
-                    <Menu.Item key="4">Bob</Menu.Item>
-                    <Menu.Item key="5">Bob</Menu.Item>
-                    <Menu.Item key="7">Bob</Menu.Item>
+                    { contactList && contactList.map((item,index)=>(
+                        <Menu.Item key={index}>{item}</Menu.Item>
+                    ))}
                 </Menu>
             </div>
         )

@@ -4,8 +4,8 @@ import msgReducer from './msgReducer.jsx';
 import nicknameReducer from './nicknameReducer';
 
 const rootReducer = combineReducers({
-    contact: contactReducer,
-    msg: msgReducer,
+    contactList: contactReducer,
+    msgList: msgReducer,
     nickName: nicknameReducer
 });
 

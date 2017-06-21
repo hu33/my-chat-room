@@ -7,13 +7,14 @@ class MessageItem extends React.PureComponent {
     }
 
     render() {
+        const { msg } = this.props;
         return (
             <div className="message-item">
                 <div className="avatar">
                     <img src="/static/avatar.jpg"/>
                 </div>
                 <div className="message">
-                    <span>hello</span>
+                    <span>{msg.msg}</span>
                 </div>
             </div>
         )

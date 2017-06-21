@@ -1,9 +1,11 @@
-function contactReducer(state= [], action) {
+const contactList = ['Bob'];
+
+function contactReducer(preState = contactList, action) {
     switch (action.type) {
         case 'CONTACT_UPDATE':
             return action.contactList;
         default:
-            return state;
+            return preState;
     }
 }
 

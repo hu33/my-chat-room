@@ -7,10 +7,11 @@ class InfoItem extends React.PureComponent {
     }
 
     render() {
+        const { nickName } = this.props;
         return (
             <div className="info-item">
                 <img src="/static/avatar.jpg"/>
-                <span>33</span>
+                <span>{nickName}</span>
             </div>
         )
     }

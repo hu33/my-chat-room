@@ -9,10 +9,12 @@ class ChatBox extends React.Component {
     }
 
     render(){
+        const { msgList, nickName, handleSend } = this.props;
+
         return (
             <div className="chatBox">
-                <MessageBox />
-                <MessageInput />
+                <MessageBox msgList={msgList} />
+                <MessageInput handleSend={handleSend} nickName={nickName} />
             </div>
         )
     }
