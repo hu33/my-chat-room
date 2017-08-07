@@ -7,14 +7,14 @@ class MessageItem extends React.PureComponent {
     }
 
     render() {
-        const { msg } = this.props;
+        const { msg, index } = this.props;
         return (
             <div className="message-item">
                 <div className="avatar">
-                    <img src="/static/avatar.jpg"/>
+                    <img src="/static/avatar.jpg" onClick={this.props.clickAvatar.bind(null, index)}/>
                 </div>
                 <div className="message">
-                    <span>{msg.msg}</span>
+                    <span>{msg.msg + index}</span>
                 </div>
             </div>
         )

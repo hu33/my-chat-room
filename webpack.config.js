@@ -46,7 +46,16 @@ module.exports = {
                 // loader: ['style', 'css', 'postcss', 'sass'],
                 loader: 'style!css!sass',
                 include: __dirname
-            }
+            },
+            {
+                test: /(\.less|\.module\.less)$/,
+                loaders: [
+                    'style',
+                    'css',
+                    'postcss',
+                    `less-loader?{"sourceMap":true}`
+                ],
+            },
         ]
     }
 };
